@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fruits Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <!-- Add web-site icon -->
+        <link rel="shortcut icon" type="image/x-icon" href="Images/logo.jpg" />
+    </head>    
+    <body>
+        <div class="container-fluid col-lg-10 col-md-9 col-sm-8">
+            <div id="score">
+                Score: <span id="scorevalue">0</span>
+            </div>
+            <div id="livesLeft"></div>
+            <div id="instruction">
+                Catch Fruits
+            </div>
+            <div id="fruitsContainer">
+                <img id="fruit1" class="fruit">
+            </div>
+            <div id="startreset">
+                Start Game
+            </div>
+            <div id="gameOver"></div>
+        </div>
+        <!-- Audio -->
+        <audio id="slice_sound">
+            <source src="Audio/slicefruit.mp3"></source>
+        </audio>
+        <audio id="lose_sound">
+            <source src="Audio/lose.wav"></source>
+        </audio>
+        <audio id="final_lose_sound">
+            <source src="Audio/finallose.wav"></source>
+        </audio>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="jquery.js"></script>
+    </body>
+</html>
